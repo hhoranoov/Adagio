@@ -1,0 +1,388 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  scrollbar-color: rgb(194, 171, 140) rgb(31, 31, 31);
+}
+
+::selection {
+  background-color: rgb(26,26,26);
+  color: rgb(157, 145, 129);
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.scroll {
+  background-color: rgb(26, 26, 26);
+  color: rgb(255, 255, 255);
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  text-align: center;
+  font-size: 28px;
+  border-radius: 15px;
+  bottom: 10px;
+  right: 10px;
+  transition: 0.5s ease;
+}
+
+.scroll:hover {
+  background-color: rgb(157, 145, 129);
+  transform: scale(1.1);
+}
+
+#home {
+  width: 100%;
+  height: 105vh;
+  background-image: url('./img/background.png');
+  background-position: center;
+  background-size: cover;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.nav {
+  display: flex;
+  padding: 50px 80px;
+}
+
+.logo {
+  height: 40px;
+  margin-right: auto;
+  transition: 1s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.list-item {
+  display: inline-block;
+  padding: 10px 15px;
+}
+
+.list-item a {
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+  font-weight: 600;
+  transition: 0.5s ease;
+}
+.list-item a:hover {
+  color: rgb(184, 188, 192);
+}
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+}
+
+.welcome h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.welcome p {
+  margin-bottom: 50px;
+}
+
+button {
+  border: none;
+  padding: 10px 30px;
+  border-radius: 20px;
+  background-color: rgb(194, 171, 140);
+  transition: transform 0.5s ease;
+}
+
+button a {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+button:hover {
+  background-color: rgb(157, 145, 129);
+  transform: scale(1.1);
+}
+
+#artists {
+  height: auto;
+  min-height: 100vh;
+  text-align: center;
+  padding: 0 50px;
+}
+
+#artists p {
+  margin: 10px 20px 50px 20px;
+}
+
+.icon {
+  width: 50px;
+  margin: 35px 0 10px 0;
+}
+
+.blocks {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+  margin: 0 20px 50px 20px;
+}
+.artist {
+  display: flex;
+  position: relative;
+  align-items: center;
+  background-color: rgb(26, 26, 26);
+  border-radius: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.394);
+  padding: 5px;
+  transition: 0.5s ease;
+}
+
+.artist:hover {
+  transform: scale(1.05);
+}
+
+.artist img {
+  max-width: 120px;
+  border-radius: 20px;
+  margin: 0px 10px 65px 0px;
+}
+
+.artist h2 {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+
+.artist audio {
+  background-color: rgb(26, 26, 26);
+  border-radius: 50px;
+  position: absolute;
+  bottom: 0;
+  width: 98%;
+  margin: 0px 0px 0px 0;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: rgb(26, 26, 26);
+}
+
+audio::-webkit-media-controls-play-button {
+  background-color: rgb(255, 255, 255);
+  border-radius: 50px;
+}
+
+audio::-webkit-media-controls-timeline {
+  background-color: rgb(255, 255, 255);
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  border-radius: 40px;
+}
+
+audio::-webkit-media-controls-mute-button {
+  background-color: rgb(255, 255, 255);
+  border-radius: 40px;
+}
+
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display,
+audio::-webkit-media-controls-volume-slider {
+  display: none;
+}
+
+#shop {
+  height: auto;
+  min-height: 105vh;
+  background-color: rgb(26, 26, 26);
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.shop-header {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.shop-header p {
+  max-width: 1000px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 20px;
+}
+.main-box {
+  margin-bottom: 15px;
+  border-radius: 20px;
+  width: 60%;
+}
+
+.box label {
+  background: rgb(157, 145, 129);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  border-radius: 20px;
+  padding: 10px 20px;
+  transition: all 1s ease-in-out;
+}
+
+.main-box label:hover {
+  background: rgb(118, 108, 96);
+}
+
+.main-box input:checked ~ label {
+  border-radius: 20px 20px 0 0;
+  background: rgb(157, 145, 129);
+}
+
+.box-text {
+  background: #fff;
+  width: 100%;
+  max-height: 0px;
+  overflow: hidden;
+  border-radius: 0 0 25px 25px;
+  transition: all 0.4s ease;
+}
+
+.main-box input:checked ~ .box-text {
+  max-height: 100vh;
+}
+
+.box-text p {
+  padding: 20px;
+  font-size: 16px;
+  color: #111;
+}
+
+.text-end {
+  color: #fff;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+#about {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  padding: 80px 10%;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 50px;
+  margin-right: 90px;
+}
+
+#about h1 {
+  margin-bottom: 20px;
+}
+
+#about p {
+  margin: 0 0 10px 0;
+}
+
+.about-photo {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 30px;
+  margin-top: 50px;
+}
+
+.footer {
+  background-color: rgb(26, 26, 26);
+  color: rgb(255, 255, 255);
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0px 30px 0px;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+}
+
+.footer-logo h4 {
+  font-size: 26px;
+  font-weight: 800;
+}
+
+.footer-logo p {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.footer-logo hr {
+  color: rgb(255, 255, 255);
+  margin-top: 6px;
+}
+@media (max-width: 768px) {
+  header {
+    padding: 20px;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  .logo {
+    margin: 0;
+  }
+
+  .welcome h1 {
+    font-size: 35px;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  .scroll {
+    display: none;
+  }
+
+  #about img {
+    display: none;
+  }
+
+  #artists {
+    height: auto; 
+    min-height: 100vh;
+    text-align: center; 
+    padding: 15px 0px;
+  }
+
+  .content {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+}

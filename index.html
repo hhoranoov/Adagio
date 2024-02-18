@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adagio - Music Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./img/favicon.png" />
+  </head>
+  <body>
+    <div>
+      <a href="#home" class="scroll">↑</a>
+      <header id="home">
+        <nav class="nav">
+          <img class="logo" src="./img/logo.png" alt="logo" />
+          <ul class="nav-list">
+            <li class="list-item"><a href="#home">Домівка</a></li>
+            <li class="list-item"><a href="#artists">Виконавці</a></li>
+            <li class="list-item"><a href="#shop">Послуги</a></li>
+            <li class="list-item"><a href="#about">Про нас</a></li>
+          </ul>
+        </nav>
+        <div class="welcome">
+          <h1>
+            Вітаємо на сторінці Adagio! <br />
+            Музична студія, де таланти розцвітають.
+          </h1>
+          <p>
+            Дізнайтеся про наші останні новини, події та проєкти. Приєднуйтеся
+            до нас у світ звуку та емоцій!
+          </p>
+          <button><a href="#about">Дізнатись більше</a></button>
+        </div>
+      </header>
+      <main>
+        <section id="artists">
+          <div>
+            <img class="icon" src="./img/microphone.png" />
+            <h1>ВИКОНАВЦІ</h1>
+            <p>
+              Знайомтеся з нашими талановитими виконавцями, які надають життя
+              нашим проєктам. Відкрийте для себе різноманіття стилів та
+              талантів, які роблять Adagio особливим. Кожен виконавець має свою
+              унікальну історію та внесок у світ музики.
+            </p>
+          </div>
+          <div class="blocks">
+            <div class="artist">
+              <img src="./img/golubenko.png" alt="1" />
+              <a href="https://open.spotify.com/artist/5XPjmh7BsTQfSfp9wqSoJQ">
+                <h2 class="text">GOLUBENKO</h2>
+              </a>
+              <audio controls src="./audio/golubenko.mp3"></audio>
+            </div>
+            <div class="artist">
+              <img src="./img/molodi.png" alt="2" />
+              <a href="https://open.spotify.com/artist/0WBxktj7eb89sByiSeFelF">
+                <h2 class="text">MOLODI</h2>
+              </a>
+              <audio controls src="./audio/molodi.mp3"></audio>
+            </div>
+            <div class="artist">
+              <img src="./img/schmalgauzen.png" alt="3" />
+              <a href="https://open.spotify.com/artist/1qqW4QBTgFMH2Vpzwboo8z">
+                <h2 class="text">Schmalgauzen</h2>
+              </a>
+              <audio controls src="./audio/schmalgauzen.mp3"></audio>
+            </div>
+            <div class="artist">
+              <img src="./img/shumei.png" alt="4" />
+              <a href="https://open.spotify.com/artist/1BtGSVQey2HyYbFiw8O1mz">
+                <h2 class="text">SHUMEI</h2>
+              </a>
+              <audio controls src="./audio/shumei.mp3"></audio>
+            </div>
+            <div class="artist">
+              <img src="./img/sadsvit.png" alt="5" />
+              <a href="https://open.spotify.com/artist/2ojY7fXJxZQhg8Rx5e8h9G">
+                <h2 class="text">SadSvit</h2>
+              </a>
+              <audio controls src="./audio/sadsvit.mp3"></audio>
+            </div>
+            <div class="artist">
+              <img src="./img/otoy.png" alt="6" />
+              <a href="https://open.spotify.com/artist/2jA3HhqCRImTV9hQF1qz1C">
+                <h2 class="text">OTOY</h2>
+              </a>
+              <audio controls src="./audio/otoy.mp3"></audio>
+            </div>
+            <div class="artist">
+              <img src="./img/kola.png" alt="7" />
+              <a href="https://open.spotify.com/artist/3DUi7MrtGNXwgYKAG3mBCh">
+                <h2 class="text">KOLA</h2>
+              </a>
+              <audio controls src="./audio/kola.mp3"></audio>
+            </div>
+            <div class="artist">
+              <img src="./img/temberblanche.png" alt="8" />
+              <a href="https://open.spotify.com/artist/4IGHF22vbC33ColRBUHIXd">
+                <h2 class="text">Tember Blanche</h2>
+              </a>
+              <audio controls src="./audio/temberblanche.mp3"></audio>
+            </div>
+            <div class="artist">
+              <img src="./img/livinston.png" alt="9" />
+              <a href="https://open.spotify.com/artist/6hdOzSe3EIQzPGqKtRX6q9">
+                <h2 class="text">Лівінстон</h2>
+              </a>
+              <audio controls src="./audio/livinston.mp3"></audio>
+            </div>
+          </div>
+        </section>
+        <section id="shop">
+          <div class="shop-header">
+            <img class="icon" src="./img/shop.png" />
+            <h1>ПОСЛУГИ</h1>
+            <p>
+              Наша музична студія - це не просто студія звукозапису, це
+              інноваційний центр для артистів, які мріють не лише про створення
+              музики, але й про високий рівень професійного розвитку та успіху
+              на музичній сцені. Наш комплексний підхід включає в себе наступні
+              ключові елементи.
+            </p>
+          </div>
+          <div class="box">
+            <div class="main-box">
+              <input type="checkbox" id="label-1" />
+              <label for="label-1">
+                <span>Звукозапис та Мікшування</span>
+              </label>
+              <div class="box-text">
+                <p>
+                  Наші звукоінженери пропонують не лише технічно бездоганні
+                  записи, але й взаємодію, спрямовану на виборче вираження
+                  вашого унікального звучання. Ми створюємо атмосферу та комфорт
+                  для творчості.
+                </p>
+              </div>
+            </div>
+            <div class="main-box">
+              <input type="checkbox" id="label-2" />
+              <label for="label-2">
+                <span>Музичнe Продюсування</span>
+              </label>
+              <div class="box-text">
+                <p>
+                  Наші продюсери - це креативні союзники, які допомагають вам не
+                  лише записати трек, а й розкрити його потенціал, додаючи нові
+                  шари і ідеї, щоб ваша музика була на повній висоті.
+                </p>
+              </div>
+            </div>
+            <div class="main-box">
+              <input type="checkbox" id="label-3" />
+              <label for="label-3">
+                <span>Майстеринг</span>
+              </label>
+              <div class="box-text">
+                <p>
+                  Віддайте ваш трек на обробку наших звукоінженерів, які
+                  забезпечать високу якість та конкурентоспроможність вашого
+                  звучання на будь-якому носії.
+                </p>
+              </div>
+            </div>
+            <div class="main-box">
+              <input type="checkbox" id="label-4" />
+              <label for="label-4">
+                <span>Візуальне Брендування</span>
+              </label>
+              <div class="box-text">
+                <p>
+                  Наші дизайнери створять для вас унікальний візуальний стиль,
+                  відображаючи вашу ідентичність в логотипах, обкладинках
+                  альбомів та рекламних матеріалах.
+                </p>
+              </div>
+            </div>
+            <div class="main-box">
+              <input type="checkbox" id="label-5" />
+              <label for="label-5">
+                <span>Соціальні Мережі та Промо</span>
+              </label>
+              <div class="box-text">
+                <p>
+                  Ми розробляємо стратегії соціальних мереж та маркетингові
+                  кампанії для забезпечення ефективної промоції вашого музичного
+                  бренду та збільшення вашого фан-середовища.
+                </p>
+              </div>
+            </div>
+            <div class="main-box">
+              <input type="checkbox" id="label-6" />
+              <label for="label-6">
+                <span>Організація Виступів</span>
+              </label>
+              <div class="box-text">
+                <p>
+                  Наші менеджери виступів працюють зі світовими та регіональними
+                  платформами для забезпечення вашого виступу на різноманітних
+                  заходах, фестивалях та концертах.
+                </p>
+              </div>
+            </div>
+            <div class="main-box">
+              <input type="checkbox" id="label-7" />
+              <label for="label-7">
+                <span>Індивідуальні Навчання та Менторинг</span>
+              </label>
+              <div class="box-text">
+                <p>
+                  Використовуйте можливості особистих уроків та консультацій від
+                  наших професіоналів, щоб розвивати свої навички та отримувати
+                  поради щодо музичного росту.
+                </p>
+              </div>
+            </div>
+            <p class="text-end">
+              *наша місія - стати вашим надійним партнером у кожному етапі
+              вашого творчого шляху, від створення музики до її успішного
+              просування. Разом ми робимо вашу музичну мрію реальністю.
+            </p>
+          </div>
+        </section>
+        <section id="about">
+          <div class="content">
+            <img class="icon" src="./img/favicon.png" alt="logo" />
+            <h1>ПРО НАС</h1>
+            <p>
+              Adagio Music Studio є місцем, де кожна нота стає ключем до
+              унікального світу музики. Наша місія полягає в тому, щоб надихати
+              та розвивати творчий потенціал кожного, хто крокує у наші двері.
+              Мистворюємо атмосферу, де ви можете відчувати себе вільними
+              виражати свої музичні ідеї та емоції.
+            </p>
+            <p>
+              В Adagio Music Studio працює талановита команда музикантів і
+              звукорежисерів, які об'єднують свої сили, щоб допомагати вам у
+              кожному етапі вашого творчого шляху. Ми прагнемо створити не
+              просто студію, але і спільноту, де кожен знаходить підтримку,
+              натхнення та можливості для розвитку свого музичного обдарування.
+            </p>
+            <p>
+              Adagio Music Studio ми віримо, що кожен має свій власний музичний
+              шлях. Ми пропонуємо індивідуальний підхід до кожного проекту, де
+              ви можете вільно виражати свій стиль та унікальність. Наші
+              звукорежисери та продюсери працюють, щоб допомогти вам здійснити
+              свої музичні амбіції та створити звук, який залишить слухачів
+              зачарованими.
+            </p>
+            <p>
+              Ми завжди раді бачити нових творчих особистостей у нашій студії.
+              Приєднуйтеся до Adagio Music Studio і дайте своїй музиці шанс
+              зазвучати так, як ніколи раніше. Разом ми створимо не тільки
+              звукові композиції, але і незабутні моменти, які залишаться в
+              серцях слухачів.
+            </p>
+          </div>
+          <img class="about-photo" src="./img/studio.png" />
+        </section>
+      </main>
+    </div>
+    <footer class="footer">
+      <div class="footer-logo">
+        <h4>ADAGIO</h4>
+        <p>Copyright © 2023. All rights reserved.</p>
+        <hr />
+      </div>
+    </footer>
+  </body>
+</html>
